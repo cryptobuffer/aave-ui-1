@@ -4,7 +4,7 @@
   "private": false,
   "license": "BSD-3-Clause",
   "engines": {
-    "node": ">=15"
+    "node": ">=14"
   },
   "dependencies": {
     "@0x/subproviders": "^6.5.4",
