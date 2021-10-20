@@ -120,7 +120,7 @@
     "eject": "react-scripts eject",
     "gql-gen": "graphql-codegen --config codegen.yml",
     "i18n": "NODE_ENV=development node ./scripts/extract-intl-messages.js",
-    "sys:prepare-ipfs-mode": "contents=\"$(jq '.homepage = \".\"' package.json)\" && echo \"${contents}\" > package.json",
+    "sys:prepare-ipfs-mode": "contents=\"$(jq '.homepage = \".\"' package.json)\" && echo \"${contents}\" > package.json && apt-get install libudev-dev",
     "build-ipfs": "npm run sys:prepare-ipfs-mode && REACT_APP_IPFS_MODE=true npm run build",
     "pinata:ipfs-publish": "npm run build-ipfs && node scripts/publish.js"
   },
